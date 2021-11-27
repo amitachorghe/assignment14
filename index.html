@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>TODO LIST </title>
+
+    <style>
+      h1 {
+        text-align: center;
+        color: rgba(77, 58, 6, 0.685);
+      }
+      body{
+          background-color: rgb(204, 203, 121);
+      }
+    </style>
+  </head>
+  <body>
+      <h1>TODO LIST</h1>
+    <script>
+        //add item in list
+        var todo = [];
+        todo.push("Wakeup at 6am");
+        todo.push("Have a Brakfast at 8am");
+        todo.push("Go to Office at 10am");
+        console.log(todo);
+        //show list
+        function showList()
+        {
+            for(var i = 0;i < todo.length; i++)
+            {
+                console.log(todo[i]);
+
+            }
+        }
+        // add new item to list
+        function add_todo_item(new_item)
+        {
+            todo.push(new_item);
+        }
+        // delete an item
+        function delete_todo_item(delete_item)
+        {
+            todo.pop(delete_item);
+        }
+        //edit an item
+        function edit_todo_list()
+        {
+            todo[0]="Wake up at 8am";
+            console.log(todo[0]);
+        }
+        // Give check to todo list item
+        function check_todo_list()
+        {
+            todo[1]="Have a Brakfast at 8am ✔";
+            console.log(todo[1]);
+        }
+
+    </script>
+  </body>
+  </html>
